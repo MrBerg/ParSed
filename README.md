@@ -8,9 +8,9 @@ A list of replacements from http://xkcd.com/1288/ included.
 
 Installation
 ---------
--Make sure that Python 2.7 is installed
--Download this repository
--Download the esmre library (licensed under LGPL2.1), for building a string index
+*Make sure that Python 2.7 is installed
+*Download this repository
+*Download the esmre library (licensed under LGPL2.1), for building a string index
 https://code.google.com/p/esmre/
 -Follow the instructions in esmre-0.3.1/INSTALL
 -that's all. If you need help using ParSed, there's always 'python parsed.py -h'!
@@ -20,8 +20,7 @@ Tech
 -------
 ParSed uses filter files to transform multiple strings.
  A filter file contains a list of changes to happen to the text, one per line. For instance, the filter file containing
-"foo:=bar
-bat:=cat"
+"foo:=bar" and "bat:=cat"
 changes all occurrences of foo to bar and bat to cat. Right now ParSed supports using multiple filter files simultaneously. If the filter files contain multiple changes for the same string, the last change is used.
 
 It is also possible to use more than one input and output file, but if less output files than input files are listed, ParSed prints everything to the first output file.
@@ -43,5 +42,5 @@ and run 'python parsed.py -i inputfile -f filterfile -o outputfile'. You can als
 
 Known bugs:
 -----------
--Pathological recursions like loop:=loopdeloop don't work as intended
--The number of recursions depends on the amount of characters left to read (at least it doesn't get stuck in an eternal loop...)
+*Pathological recursions like loop:=loopdeloop don't work as intended
+*The number of recursions depends on the amount of characters left to read (at least it doesn't get stuck in an infinite loop...)
