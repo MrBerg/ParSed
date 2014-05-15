@@ -5,6 +5,7 @@ an experimental stream editor for transforming text
 made to implement http://xkcd.com/1288/ (CC BY-NC 2.5)
 A list of replacements from http://xkcd.com/1288/ included.
 
+
 Installation
 ---------
 -Make sure that Python 2.7 is installed
@@ -13,6 +14,7 @@ Installation
 https://code.google.com/p/esmre/
 -Follow the instructions in esmre-0.3.1/INSTALL
 -that's all. If you need help using ParSed, there's always 'python parsed.py -h'!
+
 
 Tech
 -------
@@ -29,6 +31,7 @@ You can make it even more recursive by using the -r MAX_NUMBER_OF_RECURSIONS. Th
 
 Because it is supposed to work on streams, it should be able to work on one passthrough,
 meaning that it should check the text character by character and that a change shouldn't affect text before the match
+
 
 Emulating sed
 -------------
