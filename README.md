@@ -8,12 +8,12 @@ A list of replacements from http://xkcd.com/1288/ included.
 
 Installation
 ---------
-*Make sure that Python 2.7 is installed
-*Download this repository
-*Download the esmre library (licensed under LGPL2.1), for building a string index
+* Make sure that Python 2.7 is installed
+* Download this repository
+* Download the esmre library (licensed under LGPL2.1), for building a string index
 https://code.google.com/p/esmre/
--Follow the instructions in esmre-0.3.1/INSTALL
--that's all. If you need help using ParSed, there's always 'python parsed.py -h'!
+* Follow the instructions in esmre-0.3.1/INSTALL
+* That's all. If you need help using ParSed, there's always 'python parsed.py -h'!
 
 
 Tech
@@ -42,5 +42,5 @@ and run 'python parsed.py -i inputfile -f filterfile -o outputfile'. You can als
 
 Known bugs:
 -----------
-*Pathological recursions like loop:=loopdeloop don't work as intended
-*The number of recursions depends on the amount of characters left to read (at least it doesn't get stuck in an infinite loop...)
+* Pathological recursions like loop:=loopdeloop don't work as intended
+* The number of recursions depends on the amount of characters left to read (at least it doesn't get stuck in an infinite loop...)
